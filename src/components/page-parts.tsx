@@ -1,22 +1,33 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Icon } from "./icons";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
-/* Charcoal hero used at the top of every inner page (single H1). */
+/* Charcoal hero used at the top of every inner page (single H1). Pass `image`
+   to show a real photo banner behind the text (darkened for readability). */
 export function InnerHero({
   eyebrow,
   title,
   children,
   showCta = true,
+  image,
 }: {
   eyebrow: string;
   title: string;
   children?: React.ReactNode;
   showCta?: boolean;
+  image?: string;
 }) {
   return (
     <section className="relative overflow-hidden bg-charcoal text-white">
-      <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal-800 to-charcoal" aria-hidden="true" />
+      {image ? (
+        <>
+          <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/95 to-charcoal/60" aria-hidden="true" />
+        </>
+      ) : (
+        <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal-800 to-charcoal" aria-hidden="true" />
+      )}
       <div
         className="absolute inset-0 opacity-[0.06]"
         aria-hidden="true"

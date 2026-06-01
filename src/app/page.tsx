@@ -208,10 +208,10 @@ export default function Home() {
 
           <Reveal delay={120} className="relative">
             <Image
-              src="/images/truck-house.jpg"
-              alt="A Complete Roofing & Repair work truck parked at a customer's home in West Michigan"
-              width={590}
-              height={472}
+              src="/images/project-aerial.jpg"
+              alt="Aerial view of a completed roof installed by Complete Roofing & Repair in West Michigan"
+              width={1280}
+              height={853}
               className="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl"
             />
           </Reveal>

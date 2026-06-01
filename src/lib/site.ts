@@ -95,6 +95,16 @@ export const SERVICES = [
   },
 ] as const;
 
+/* Banner photo for each service category page (pulled from the old site). */
+export const SERVICE_HERO: Record<string, string> = {
+  "roof-installation": "/images/hero-roof-installation.webp",
+  "roof-repairs": "/images/hero-roof-repairs.jpg",
+  "specialty-repairs": "/images/hero-specialty-repairs.jpg",
+  "specialized-services": "/images/hero-specialized-services.jpg",
+  gutters: "/images/hero-gutters.jpg",
+  construction: "/images/hero-construction.jpg",
+};
+
 /* Dropdown options for the quote forms. */
 export const SERVICE_OPTIONS = [
   "Roof Repair",

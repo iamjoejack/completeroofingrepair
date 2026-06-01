@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Icon } from "./icons";
 import { InnerHero } from "./page-parts";
 import { CtaBand } from "./sections";
-import { SERVICES, BASE_URL, SITE } from "@/lib/site";
+import { SERVICES, SERVICE_HERO, BASE_URL, SITE } from "@/lib/site";
 
 /* Shared layout for a service-category page. Copy is passed in per page so no
    two pages share boilerplate. Also emits Service schema. */
@@ -48,7 +48,7 @@ export function ServicePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
-      <InnerHero eyebrow={eyebrow} title={title}>{lead}</InnerHero>
+      <InnerHero eyebrow={eyebrow} title={title} image={SERVICE_HERO[slug]}>{lead}</InnerHero>
 
       <section className="py-16 sm:py-20">
         <div className="wrap grid gap-12 lg:grid-cols-3">

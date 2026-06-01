@@ -54,10 +54,10 @@ export default function Page() {
 
           <div className="relative">
             <Image
-              src="/images/truck-house.jpg"
-              alt="A Complete Roofing & Repair truck at a customer's home in West Michigan"
-              width={590}
-              height={472}
+              src="/images/project-springlake.webp"
+              alt="A modern West Michigan home with a new metal and shingle roof by Complete Roofing & Repair"
+              width={1280}
+              height={960}
               className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg"
             />
             <div className="absolute -bottom-5 left-5 rounded-xl bg-brand px-5 py-4 text-white shadow-xl">
