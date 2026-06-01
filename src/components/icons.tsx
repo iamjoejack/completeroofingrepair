@@ -5,7 +5,7 @@ type IconName =
   | "clock" | "bolt" | "dollar" | "shield" | "badge" | "umbrella" | "chart"
   | "house" | "wrench" | "home-alert" | "sparkle" | "gutter" | "building"
   | "phone" | "sms" | "check" | "star" | "arrow" | "menu" | "instagram"
-  | "mail" | "image" | "leak" | "pin" | "roof";
+  | "facebook" | "mail" | "image" | "leak" | "pin" | "roof";
 
 const stroke: Partial<Record<IconName, boolean>> = {
   clock: true, bolt: true, dollar: true, shield: true, badge: true,
@@ -40,6 +40,7 @@ const PATHS: Record<IconName, React.ReactNode> = {
   pin: <><path d="M12 21s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12z" strokeLinejoin="round" /><circle cx="12" cy="9" r="2.5" /></>,
   roof: <><path d="M5 17 16 8l11 9" strokeLinecap="round" strokeLinejoin="round" /><path d="M8 16v8h16v-8" strokeLinejoin="round" /></>,
   instagram: <path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1.1.5 1.6 1s.8 1 1 1.6c.3.6.4 1.3.5 2.3 0 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3a4.6 4.6 0 0 1-1 1.6 4.6 4.6 0 0 1-1.6 1c-.6.3-1.3.4-2.3.5-1.1 0-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5a4.6 4.6 0 0 1-1.6-1 4.6 4.6 0 0 1-1-1.6c-.3-.6-.4-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3a4.6 4.6 0 0 1 1-1.6 4.6 4.6 0 0 1 1.6-1c.6-.3 1.3-.4 2.3-.5C9 2 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zM17.8 7a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z" />,
+  facebook: <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />,
 };
 
 export function Icon({ name, ...props }: { name: IconName } & SVGProps<SVGSVGElement>) {

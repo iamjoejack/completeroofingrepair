@@ -76,10 +76,21 @@ export function SiteFooter() {
               href={SITE.instagram}
               target="_blank"
               rel="noopener"
+              aria-label="Follow us on Instagram"
               className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2 text-sm font-bold text-white hover:bg-white/15"
             >
               <Icon name="instagram" className="h-5 w-5" />
-              {SITE.instagramHandle}
+              Instagram
+            </a>
+            <a
+              href={SITE.facebook}
+              target="_blank"
+              rel="noopener"
+              aria-label="Follow us on Facebook"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2 text-sm font-bold text-white hover:bg-white/15"
+            >
+              <Icon name="facebook" className="h-5 w-5" />
+              Facebook
             </a>
           </div>
           <Link href="/contact" className="btn-primary mt-5 w-full">Get a free quote</Link>

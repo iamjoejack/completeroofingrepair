@@ -80,7 +80,7 @@ const localBusinessLd = {
       closes: "17:00",
     },
   ],
-  sameAs: [SITE.instagram, SITE.bbbProfileUrl],
+  sameAs: [SITE.instagram, SITE.facebook, SITE.bbbProfileUrl],
   areaServed: [
     "Grand Rapids MI", "Byron Center MI", "Cutlerville MI", "Caledonia MI",
     "Kentwood MI", "Hudsonville MI", "Grandville MI", "Jenison MI",

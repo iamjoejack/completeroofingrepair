@@ -15,6 +15,7 @@ export const SITE = {
   email: "info@completeroofingrepair.com",
   instagram: "https://www.instagram.com/completeroofingrepair_gr/",
   instagramHandle: "@completeroofingrepair_gr",
+  facebook: "https://www.facebook.com/100089873824448",
   bbbProfileUrl:
     "https://www.bbb.org/us/mi/byron-center/profile/roofing-contractors/complete-roofing-repair-llc-0372-38215796",
   bbbRating: "A+",
