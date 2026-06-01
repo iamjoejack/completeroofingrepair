@@ -19,6 +19,8 @@ export const SITE = {
     "https://www.bbb.org/us/mi/byron-center/profile/roofing-contractors/complete-roofing-repair-llc-0372-38215796",
   bbbRating: "A+",
   bbbAccreditedSince: 2023,
+  rating: 4.7, // average across all reviews
+  reviewCount: 56,
   address: {
     street: "6049 Clyde Park Avenue SW",
     city: "Byron Center",
@@ -163,20 +165,64 @@ export const POSTS = [
   },
 ] as const;
 
-/* REAL customer reviews pulled from public profiles (BBB, Google). Add more as
-   they come in. Keep attribution honest — only use genuine reviews here. */
+/* Real customer reviews (the 10 most recent of 56). Only genuine reviews here. */
 export const REVIEWS = [
   {
     quote:
-      "Had Complete Roofing put a new roof on my house. Showed up on time with a full crew at 7:30 am and had stripped the old off and put on a great looking new roof.",
-    name: "Dean V.",
-    source: "BBB Review",
+      "Tyce and his team did an excellent job replacing our roof. From start to finish, I was exceptionally happy with the process. We weren’t sure on the shingle color choice so they gave us a couple of houses they did in the area recently to go check out and help us make the right choice for our home. They tore off our old shingle and installed the new ones in the same day.",
+    name: "Jake S.",
+    date: "May 2026",
+  },
+  {
+    quote: "They did great work on my house and barn! Cleaned up like they were not even there!!",
+    name: "Greg V.",
+    date: "May 2026",
+  },
+  {
+    quote: "The crew did a great job and I would definitely recommend them.",
+    name: "Matthew R.",
+    date: "March 2026",
   },
   {
     quote:
-      "Fast, clean, and very respectful. These guys did a great job and they protected all of the plants.",
-    name: "Verified customer",
-    source: "Google Review",
+      "They were prompt with their service. We left in the morning and when we returned after work, they were finishing up. Great work!",
+    name: "Mike V.",
+    date: "December 2025",
+  },
+  {
+    quote:
+      "These guys are amazing! They completed my roof in one full day. The worksite was very organized and neat. Cleanup was great. Roof looks amazing, all the colors match perfectly. Highly recommend this team.",
+    name: "Kevin K.",
+    date: "December 2025",
+  },
+  {
+    quote:
+      "They did a great job removing and installing our new roof. They were prompt, efficient, and Tyce was always able to answer any questions we had. They also had the best quote of the 3 companies we checked with.",
+    name: "Chad B.",
+    date: "December 2025",
+  },
+  {
+    quote:
+      "Complete Roofing & Repair and Ross were excellent to work with and did a fabulous job replacing our roof. Their communication and attention to detail made us feel confident our home was in great hands. My other family members who have hired them are all satisfied customers too. Highly recommend!",
+    name: "Don D.",
+    date: "November 2025",
+  },
+  {
+    quote:
+      "Highly recommend! Professional and honest. The estimator was upfront with costs and educated me on all the options. The crew that handled the tear-off and reinstall were top-notch. The whole project was complete in a day and everything was cleaned up meticulously!",
+    name: "Tami C.",
+    date: "October 2025",
+  },
+  {
+    quote:
+      "Jason was very knowledgeable in describing what work should be done while installing a new roof. The team that showed up worked very hard. It was amazing how clean our property was when they left. I would highly recommend them!",
+    name: "Phillip D.",
+    date: "September 2025",
+  },
+  {
+    quote: "Very smooth process. Job completed efficiently and the clean-up was perfect.",
+    name: "Laura S.",
+    date: "September 2025",
   },
 ] as const;
 

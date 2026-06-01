@@ -86,6 +86,12 @@ const localBusinessLd = {
     "Kentwood MI", "Hudsonville MI", "Grandville MI", "Jenison MI",
     "Wayland MI", "Dorr MI", "Traverse City MI", "Charlevoix MI",
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: SITE.rating,
+    reviewCount: SITE.reviewCount,
+    bestRating: 5,
+  },
   review: REVIEWS.map((r) => ({
     "@type": "Review",
     reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },

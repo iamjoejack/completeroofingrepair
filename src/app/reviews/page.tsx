@@ -7,7 +7,7 @@ import { REVIEWS, SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Reviews",
   description:
-    "See what West Michigan homeowners say about Complete Roofing & Repair, and leave your own review. Trusted, BBB-accredited roofing since 2008. Call (616) 207-3831.",
+    "Read real 4.7-star reviews from West Michigan homeowners about Complete Roofing & Repair, and leave your own. BBB-accredited roofing since 2008. Call (616) 207-3831.",
   alternates: { canonical: "/reviews" },
 };
 
@@ -15,26 +15,33 @@ export default function Page() {
   return (
     <>
       <InnerHero eyebrow="Reviews" title="What West Michigan homeowners say">
-        Our reputation is built one roof and one happy homeowner at a time. Real, verified reviews appear here as
-        they come in.
+        We’ve earned a 4.7-star average across 56 reviews, one roof and one happy homeowner at a time. Here’s a look at
+        what recent customers had to say.
       </InnerHero>
 
       <section className="py-16 sm:py-20">
         <div className="wrap">
-          {/* A+ / BBB trust banner */}
-          <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center justify-center gap-4 rounded-2xl bg-gray-50 px-6 py-6 text-center sm:flex-row sm:gap-8 sm:text-left">
+          {/* Rating + BBB trust banner */}
+          <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center justify-center gap-6 rounded-2xl bg-gray-50 px-6 py-6 text-center sm:flex-row sm:justify-between sm:text-left">
+            <div className="flex items-center gap-3">
+              <div className="text-4xl font-black text-charcoal">{SITE.rating}</div>
+              <div>
+                <Stars className="[&>svg]:h-4 [&>svg]:w-4" />
+                <div className="mt-1 text-sm text-gray-600">{SITE.reviewCount} customer reviews</div>
+              </div>
+            </div>
+            <div className="hidden h-12 w-px bg-gray-300 sm:block" aria-hidden="true" />
             <div className="flex items-center gap-3">
               <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand/10 text-brand">
                 <Icon name="shield" className="h-7 w-7" />
               </span>
               <div>
-                <div className="text-xl font-black text-charcoal">BBB {SITE.bbbRating} Rated</div>
-                <div className="text-sm text-gray-600">Accredited business since {SITE.bbbAccreditedSince}</div>
+                <div className="text-lg font-black text-charcoal">BBB {SITE.bbbRating} Rated</div>
+                <a href={SITE.bbbProfileUrl} target="_blank" rel="noopener" className="text-sm font-semibold text-brand hover:underline">
+                  Accredited since {SITE.bbbAccreditedSince}
+                </a>
               </div>
             </div>
-            <a href={SITE.bbbProfileUrl} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 font-semibold text-brand sm:ml-auto">
-              See our BBB profile <Icon name="arrow" className="h-4 w-4" />
-            </a>
           </div>
 
           {/* Real customer reviews (from BBB / Google). */}
@@ -44,7 +51,7 @@ export default function Page() {
                 <Stars />
                 <blockquote className="mt-4 text-gray-700">“{r.quote}”</blockquote>
                 <figcaption className="mt-4 text-sm font-semibold text-gray-500">
-                  {r.name} <span className="font-normal text-gray-400">· {r.source}</span>
+                  {r.name} <span className="font-normal text-gray-400">· {r.date}</span>
                 </figcaption>
               </figure>
             ))}

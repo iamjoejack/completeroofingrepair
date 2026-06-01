@@ -46,7 +46,7 @@ export default function Home() {
             </div>
 
             <ul className="anim-fade-up mt-8 flex flex-wrap gap-2.5 text-sm font-semibold" style={{ animationDelay: "320ms" }}>
-              {["BBB A+ Accredited", "20-Year Warranty", "Licensed & Insured"].map((t) => (
+              {[`${SITE.rating}★ from ${SITE.reviewCount} reviews`, "BBB A+ Accredited", "Licensed & Insured"].map((t) => (
                 <li key={t} className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-gray-200 ring-1 ring-white/10">
                   <Icon name="check" className="h-4 w-4 text-brand" /> {t}
                 </li>
@@ -90,8 +90,8 @@ export default function Home() {
             {/* Floating review card */}
             <div className="anim-pop absolute bottom-3 right-3 max-w-[15rem] rounded-2xl bg-white p-4 text-charcoal shadow-xl lg:-bottom-7 lg:-right-7" style={{ animationDelay: "760ms" }}>
               <Stars className="[&>svg]:h-4 [&>svg]:w-4" />
-              <p className="mt-2 text-sm leading-snug text-gray-700">“Showed up on time with a full crew and put on a great-looking new roof.”</p>
-              <p className="mt-1.5 text-xs font-bold text-gray-500">Dean V., BBB</p>
+              <p className="mt-2 text-sm leading-snug text-gray-700">“They did great work on my house and barn. Cleaned up like they were not even there!”</p>
+              <p className="mt-1.5 text-xs font-bold text-gray-500">Greg V.</p>
             </div>
           </div>
         </div>
@@ -224,19 +224,20 @@ export default function Home() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="eyebrow">What homeowners say</p>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Reviews from across West Michigan</h2>
-            <p className="mt-3 text-gray-300">
-              A+ rated and BBB-accredited. Here’s what our customers say about working with us.
+            <p className="mt-3 inline-flex items-center gap-2 text-gray-300">
+              <span className="inline-flex text-brand"><Stars className="[&>svg]:h-5 [&>svg]:w-5" /></span>
+              Rated {SITE.rating} from {SITE.reviewCount} customer reviews.
             </p>
           </Reveal>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {REVIEWS.map((r, i) => (
+            {REVIEWS.slice(0, 3).map((r, i) => (
               <Reveal key={r.quote} delay={i * 100}>
                 <figure className="h-full rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
                   <Stars />
                   <blockquote className="mt-4 text-gray-200">“{r.quote}”</blockquote>
                   <figcaption className="mt-4 text-sm font-semibold text-gray-400">
-                    {r.name} <span className="font-normal text-gray-500">· {r.source}</span>
+                    {r.name} <span className="font-normal text-gray-500">· {r.date}</span>
                   </figcaption>
                 </figure>
               </Reveal>
