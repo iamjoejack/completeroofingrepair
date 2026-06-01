@@ -98,6 +98,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" data-scroll-behavior="smooth" className="h-full antialiased">
       <body className="flex min-h-full flex-col">
+        {/* Progressive-enhancement flag: enables scroll-reveal only when JS runs. */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessLd) }}

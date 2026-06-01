@@ -23,11 +23,11 @@ export function InnerHero({
         style={{ backgroundImage: "radial-gradient(circle at 1px 1px,#fff 1px,transparent 0)", backgroundSize: "22px 22px" }}
       />
       <div className="wrap relative py-14 sm:py-16">
-        <p className="eyebrow">{eyebrow}</p>
-        <h1 className="mt-3 max-w-3xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl">{title}</h1>
-        {children && <div className="mt-5 max-w-2xl text-lg text-gray-300">{children}</div>}
+        <p className="anim-fade-up eyebrow">{eyebrow}</p>
+        <h1 className="anim-fade-up mt-3 max-w-3xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl" style={{ animationDelay: "80ms" }}>{title}</h1>
+        {children && <div className="anim-fade-up mt-5 max-w-2xl text-lg text-gray-300" style={{ animationDelay: "160ms" }}>{children}</div>}
         {showCta && (
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <div className="anim-fade-up mt-7 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "240ms" }}>
             <a href={`tel:${PHONE_TEL}`} className="btn-primary">
               <Icon name="phone" className="h-5 w-5" />
               Call {PHONE_DISPLAY}
