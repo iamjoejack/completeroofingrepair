@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Icon } from "@/components/icons";
 import { QuoteForm } from "@/components/quote-form";
-import { CtaBand, TrustBar, Stars, PhotoPlaceholder } from "@/components/sections";
-import { PHONE_DISPLAY, PHONE_TEL, SITE, SERVICES, CITIES, POSTS, PLACEHOLDER_REVIEWS } from "@/lib/site";
+import { CtaBand, TrustBar, Stars } from "@/components/sections";
+import { PHONE_DISPLAY, PHONE_TEL, SITE, SERVICES, CITIES, POSTS, REVIEWS } from "@/lib/site";
 
 export default function Home() {
   return (
@@ -126,10 +127,12 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <PhotoPlaceholder
-              className="aspect-[4/3]"
-              label="Add a real photo of your crew or a finished roof here"
-              sub="public/images/crew.jpg"
+            <Image
+              src="/images/truck-house.jpg"
+              alt="A Complete Roofing & Repair work truck parked at a customer's home in West Michigan"
+              width={590}
+              height={472}
+              className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg"
             />
             <div className="absolute -bottom-5 left-5 rounded-xl bg-brand px-5 py-4 text-white shadow-xl">
               <div className="text-3xl font-black leading-none">{SITE.established}</div>
@@ -146,23 +149,26 @@ export default function Home() {
             <p className="eyebrow">What homeowners say</p>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Reviews from across West Michigan</h2>
             <p className="mt-3 text-gray-300">
-              Real, verified reviews go here as they come in. Below are examples of the kind of feedback we earn —
-              replace them with the genuine article before launch.
+              A+ rated and BBB-accredited. Here’s what our customers say about working with us.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {PLACEHOLDER_REVIEWS.map((r) => (
+            {REVIEWS.map((r) => (
               <figure key={r.quote} className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
                 <Stars />
                 <blockquote className="mt-4 text-gray-200">“{r.quote}”</blockquote>
-                <figcaption className="mt-4 text-sm font-semibold text-gray-400">— {r.attribution}</figcaption>
+                <figcaption className="mt-4 text-sm font-semibold text-gray-400">
+                  — {r.name} <span className="font-normal text-gray-500">· {r.source}</span>
+                </figcaption>
               </figure>
             ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <Link href="/reviews" className="btn-ghost">Read more reviews</Link>
+            {/* Invite new reviews */}
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-brand/10 p-6 text-center ring-1 ring-brand/20">
+              <p className="text-lg font-bold text-white">Worked with us?</p>
+              <p className="mt-1 text-sm text-gray-300">We’d love to hear about it.</p>
+              <Link href="/reviews" className="btn-primary mt-4">Leave a review</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -219,9 +225,7 @@ export default function Home() {
             {POSTS.map((p) => (
               <article key={p.slug} className="card group overflow-hidden p-0">
                 <Link href={`/blog/${p.slug}`} className="block">
-                  <div className="grid h-44 place-items-center bg-charcoal text-gray-500">
-                    <Icon name="image" className="h-10 w-10 text-brand" />
-                  </div>
+                  <Image src={p.image} alt={p.title} width={800} height={450} className="h-44 w-full object-cover" />
                   <div className="p-6">
                     <span className="text-xs font-bold uppercase tracking-wide text-brand">{p.category}</span>
                     <h3 className="mt-2 text-lg font-bold group-hover:text-brand">{p.title}</h3>

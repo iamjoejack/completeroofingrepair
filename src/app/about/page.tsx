@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { InnerHero } from "@/components/page-parts";
-import { CtaBand, PhotoPlaceholder } from "@/components/sections";
+import { CtaBand } from "@/components/sections";
 import { Icon } from "@/components/icons";
-import { SITE } from "@/lib/site";
+import { SITE, TEAM } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -52,13 +53,15 @@ export default function Page() {
           </div>
 
           <div className="relative">
-            <PhotoPlaceholder
-              className="aspect-[4/3]"
-              label="Add a real photo of your team or trucks here"
-              sub="public/images/team.jpg"
+            <Image
+              src="/images/truck-house.jpg"
+              alt="A Complete Roofing & Repair truck at a customer's home in West Michigan"
+              width={590}
+              height={472}
+              className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg"
             />
             <div className="absolute -bottom-5 left-5 rounded-xl bg-brand px-5 py-4 text-white shadow-xl">
-              <div className="text-3xl font-black leading-none">15+</div>
+              <div className="text-3xl font-black leading-none">20+</div>
               <div className="text-xs font-semibold uppercase tracking-wide">Years of experience</div>
             </div>
           </div>
@@ -80,6 +83,48 @@ export default function Page() {
                 <div>
                   <h3 className="text-lg font-bold">{title}</h3>
                   <p className="mt-1 text-gray-600">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the team — real names/roles from the company. Members without a
+          photo on file show an initials avatar (no stock photos). */}
+      <section className="py-16 sm:py-20">
+        <div className="wrap">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="eyebrow">Meet the team</p>
+            <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">The people behind your roof</h2>
+            <p className="mt-3 text-lg text-gray-600">
+              A family- and locally-owned crew serving Grand Rapids, Traverse City, and Charlevoix.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {TEAM.map((m) => (
+              <div key={m.name} className="flex items-center gap-4 rounded-2xl border border-gray-200 bg-white p-5">
+                {m.photo ? (
+                  <Image
+                    src={m.photo}
+                    alt={`${m.name}, ${m.role} at Complete Roofing & Repair`}
+                    width={270}
+                    height={270}
+                    className="h-16 w-16 shrink-0 rounded-full object-cover"
+                  />
+                ) : (
+                  <span
+                    aria-hidden="true"
+                    className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-charcoal text-lg font-black text-brand"
+                  >
+                    {m.name.split(" ").map((p) => p[0]).join("")}
+                  </span>
+                )}
+                <div>
+                  <div className="font-bold text-charcoal">{m.name}</div>
+                  <div className="text-sm text-gray-600">{m.role}</div>
+                  {m.location && <div className="text-xs font-semibold uppercase tracking-wide text-brand">{m.location}</div>}
                 </div>
               </div>
             ))}

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Icon } from "./icons";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
@@ -35,14 +36,15 @@ export function SiteHeader() {
       {/* Sticky header */}
       <header className="sticky top-0 z-40 bg-white/95 shadow-sm backdrop-blur">
         <div className="wrap flex items-center justify-between gap-4 py-3">
-          <Link href="/" className="flex items-center gap-2.5" aria-label="Complete Roofing & Repair — home">
-            <span className="grid h-10 w-10 place-items-center rounded-lg bg-charcoal text-brand">
-              <Icon name="roof" className="h-6 w-6" />
-            </span>
-            <span className="leading-tight">
-              <span className="block text-base font-extrabold tracking-tight">Complete Roofing &amp; Repair</span>
-              <span className="block text-xs font-semibold text-gray-500">Byron Center, MI · Since 2008</span>
-            </span>
+          <Link href="/" className="flex items-center" aria-label="Complete Roofing & Repair — home">
+            <Image
+              src="/images/logo.jpg"
+              alt="Complete Roofing & Repair logo"
+              width={945}
+              height={226}
+              priority
+              className="h-10 w-auto sm:h-12"
+            />
           </Link>
 
           <nav className="hidden items-center gap-7 text-sm font-semibold lg:flex" aria-label="Primary">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { InnerHero } from "@/components/page-parts";
 import { CtaBand, Stars } from "@/components/sections";
 import { Icon } from "@/components/icons";
-import { PLACEHOLDER_REVIEWS, SITE } from "@/lib/site";
+import { REVIEWS, SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Reviews",
@@ -21,21 +21,34 @@ export default function Page() {
 
       <section className="py-16 sm:py-20">
         <div className="wrap">
-          {/* PLACEHOLDER reviews — replace each with a real, verified review
-              (real name + city) before launch. Do not present as real customers. */}
-          <div className="grid gap-6 md:grid-cols-3">
-            {PLACEHOLDER_REVIEWS.map((r) => (
+          {/* A+ / BBB trust banner */}
+          <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center justify-center gap-4 rounded-2xl bg-gray-50 px-6 py-6 text-center sm:flex-row sm:gap-8 sm:text-left">
+            <div className="flex items-center gap-3">
+              <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand/10 text-brand">
+                <Icon name="shield" className="h-7 w-7" />
+              </span>
+              <div>
+                <div className="text-xl font-black text-charcoal">BBB {SITE.bbbRating} Rated</div>
+                <div className="text-sm text-gray-600">Accredited business since {SITE.bbbAccreditedSince}</div>
+              </div>
+            </div>
+            <a href={SITE.bbbProfileUrl} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 font-semibold text-brand sm:ml-auto">
+              See our BBB profile <Icon name="arrow" className="h-4 w-4" />
+            </a>
+          </div>
+
+          {/* Real customer reviews (from BBB / Google). */}
+          <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
+            {REVIEWS.map((r) => (
               <figure key={r.quote} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
                 <Stars />
                 <blockquote className="mt-4 text-gray-700">“{r.quote}”</blockquote>
-                <figcaption className="mt-4 text-sm font-semibold text-gray-500">— {r.attribution}</figcaption>
+                <figcaption className="mt-4 text-sm font-semibold text-gray-500">
+                  — {r.name} <span className="font-normal text-gray-400">· {r.source}</span>
+                </figcaption>
               </figure>
             ))}
           </div>
-          <p className="mt-6 text-center text-sm text-gray-500">
-            {/* TODO: replace the three example reviews above with genuine customer reviews. */}
-            Example reviews shown until real ones are added.
-          </p>
         </div>
       </section>
 

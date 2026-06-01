@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Icon } from "@/components/icons";
 import { InnerHero } from "@/components/page-parts";
 import { CtaBand } from "@/components/sections";
@@ -24,9 +25,7 @@ export default function Page() {
           {POSTS.map((p) => (
             <article key={p.slug} className="card group overflow-hidden p-0">
               <Link href={`/blog/${p.slug}`} className="block">
-                <div className="grid h-44 place-items-center bg-charcoal text-gray-500">
-                  <Icon name="image" className="h-10 w-10 text-brand" />
-                </div>
+                <Image src={p.image} alt={p.title} width={800} height={450} className="h-44 w-full object-cover" />
                 <div className="p-6">
                   <span className="text-xs font-bold uppercase tracking-wide text-brand">{p.category}</span>
                   <h2 className="mt-2 text-lg font-bold group-hover:text-brand">{p.title}</h2>

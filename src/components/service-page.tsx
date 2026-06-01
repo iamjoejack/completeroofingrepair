@@ -33,10 +33,20 @@ export function ServicePage({
     areaServed: "Greater Grand Rapids, MI",
     url: `${BASE_URL}/services/${slug}`,
   };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Services", item: `${BASE_URL}/services` },
+      { "@type": "ListItem", position: 3, name: title, item: `${BASE_URL}/services/${slug}` },
+    ],
+  };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
       <InnerHero eyebrow={eyebrow} title={title}>{lead}</InnerHero>
 

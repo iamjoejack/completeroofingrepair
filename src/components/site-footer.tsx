@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Icon } from "./icons";
 import { PHONE_DISPLAY, PHONE_TEL, SITE } from "@/lib/site";
 
@@ -25,6 +26,10 @@ export function SiteFooter() {
             <br />
             <a href={`tel:${PHONE_TEL}`} className="font-semibold text-white hover:text-brand">
               {PHONE_DISPLAY}
+            </a>
+            <br />
+            <a href={`mailto:${SITE.email}`} className="hover:text-brand">
+              {SITE.email}
             </a>
           </address>
         </div>
@@ -57,15 +62,15 @@ export function SiteFooter() {
         <div>
           <h2 className="text-sm font-bold uppercase tracking-wider text-white">Find us</h2>
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            {/* BBB seal — links to the real BBB profile (update SITE.bbbProfileUrl). */}
+            {/* Real BBB A+ Accredited seal — links to the live BBB profile. */}
             <a
               href={SITE.bbbProfileUrl}
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2 text-sm font-bold text-white hover:bg-white/15"
+              className="inline-flex items-center rounded-lg bg-white p-2 hover:bg-gray-100"
+              aria-label="BBB A+ Accredited Business — view our profile"
             >
-              <span className="grid h-7 w-7 place-items-center rounded bg-[#0a5a8e] text-xs font-black text-white">BBB</span>
-              Accredited
+              <Image src="/images/bbb-seal.png" alt="BBB A+ Accredited Business seal" width={158} height={110} className="h-11 w-auto" />
             </a>
             <a
               href={SITE.instagram}

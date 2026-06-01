@@ -4,7 +4,9 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { MobileCtaBar } from "@/components/mobile-cta-bar";
 import { ChatWidget } from "@/components/chat-widget";
-import { BASE_URL, PHONE_DISPLAY, SITE } from "@/lib/site";
+import { BASE_URL, PHONE_DISPLAY, SITE, REVIEWS } from "@/lib/site";
+
+const OG_IMAGE = { url: "/images/truck-house.jpg", width: 590, height: 472, alt: "Complete Roofing & Repair" };
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -14,7 +16,24 @@ export const metadata: Metadata = {
   },
   description:
     `Trusted Grand Rapids-area roofing contractor since ${SITE.established}. Roof repair, replacement & installation with a 20-year workmanship warranty, financing, and free quotes in 24 hours. 24/7 emergency service. Call ${PHONE_DISPLAY}.`,
+  applicationName: SITE.legalName,
+  keywords: [
+    "roofing contractor Grand Rapids",
+    "roof repair Byron Center MI",
+    "roof replacement Grand Rapids",
+    "storm damage roof repair",
+    "metal roofing West Michigan",
+    "emergency roofer Grand Rapids",
+  ],
+  authors: [{ name: SITE.legalName }],
+  creator: SITE.legalName,
   alternates: { canonical: "/" },
+  formatDetection: { telephone: false },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
   openGraph: {
     type: "website",
     siteName: SITE.legalName,
@@ -22,6 +41,14 @@ export const metadata: Metadata = {
     title: "Complete Roofing & Repair — Trusted Grand Rapids Roofers Since 2008",
     description:
       "Roof repair, replacement & installation across Greater Grand Rapids. 20-year workmanship warranty, financing, free 24-hour quotes, 24/7 emergency service.",
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Complete Roofing & Repair — Trusted Grand Rapids Roofers Since 2008",
+    description:
+      "Roof repair, replacement & installation across Greater Grand Rapids. 20-year workmanship warranty, financing, 24/7 emergency service.",
+    images: ["/images/truck-house.jpg"],
   },
 };
 
@@ -31,7 +58,9 @@ const localBusinessLd = {
   "@type": "RoofingContractor",
   name: SITE.legalName,
   url: BASE_URL,
+  image: `${BASE_URL}/images/truck-house.jpg`,
   telephone: "+1-616-207-3831",
+  email: SITE.email,
   priceRange: "$$",
   foundingDate: String(SITE.established),
   address: {
@@ -51,12 +80,18 @@ const localBusinessLd = {
       closes: "17:00",
     },
   ],
-  sameAs: [SITE.instagram],
+  sameAs: [SITE.instagram, SITE.bbbProfileUrl],
   areaServed: [
     "Grand Rapids MI", "Byron Center MI", "Cutlerville MI", "Caledonia MI",
     "Kentwood MI", "Hudsonville MI", "Grandville MI", "Jenison MI",
     "Wayland MI", "Dorr MI", "Traverse City MI", "Charlevoix MI",
   ],
+  review: REVIEWS.map((r) => ({
+    "@type": "Review",
+    reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },
+    author: { "@type": "Person", name: r.name },
+    reviewBody: r.quote,
+  })),
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

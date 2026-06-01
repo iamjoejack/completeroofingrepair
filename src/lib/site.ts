@@ -12,11 +12,13 @@ export const SITE = {
   name: "Complete Roofing & Repair",
   legalName: "Complete Roofing & Repair, LLC",
   established: 2008,
-  email: "", // add a real inbox if you have one
+  email: "info@completeroofingrepair.com",
   instagram: "https://www.instagram.com/completeroofingrepair_gr/",
   instagramHandle: "@completeroofingrepair_gr",
-  // TODO: paste the real Better Business Bureau profile URL.
-  bbbProfileUrl: "https://www.bbb.org/", // REPLACE WITH REAL BBB PROFILE URL
+  bbbProfileUrl:
+    "https://www.bbb.org/us/mi/byron-center/profile/roofing-contractors/complete-roofing-repair-llc-0372-38215796",
+  bbbRating: "A+",
+  bbbAccreditedSince: 2023,
   address: {
     street: "6049 Clyde Park Avenue SW",
     city: "Byron Center",
@@ -141,6 +143,7 @@ export const POSTS = [
     title: "What procrastinating on roof repairs really costs",
     excerpt:
       "A small leak today can become a five-figure repair tomorrow. Here’s the real math on putting it off.",
+    image: "/images/blog-roof-repair.jpg",
   },
   {
     slug: "does-home-insurance-cover-roof-damage",
@@ -148,6 +151,7 @@ export const POSTS = [
     title: "Does homeowners insurance cover roof damage?",
     excerpt:
       "What’s typically covered, what isn’t, and how to file a storm-damage claim the right way.",
+    image: "/images/blog-insurance.jpg",
   },
   {
     slug: "dangers-of-a-leaking-roof",
@@ -155,25 +159,35 @@ export const POSTS = [
     title: "The hidden dangers of a leaking roof",
     excerpt:
       "Mold, rot, and electrical risk: why even a minor leak deserves a fast response.",
+    image: "/images/blog-leaking-roof.jpg",
   },
 ] as const;
 
-/* PLACEHOLDER reviews — replace each with a real, verified review (real name +
-   city) before launch. Never present these as real customers. */
-export const PLACEHOLDER_REVIEWS = [
+/* REAL customer reviews pulled from public profiles (BBB, Google). Add more as
+   they come in. Keep attribution honest — only use genuine reviews here. */
+export const REVIEWS = [
   {
     quote:
-      "They had a tarp on our roof the same night the storm hit and a permanent fix done within the week. Honest pricing and they handled the insurance paperwork for us.",
-    attribution: "Example review — replace with real customer",
+      "Had Complete Roofing put a new roof on my house. Showed up on time with a full crew at 7:30 am and had stripped the old off and put on a great looking new roof.",
+    name: "Dean V.",
+    source: "BBB Review",
   },
   {
     quote:
-      "Full tear-off and new shingles in two days. The crew was respectful, cleaned up every nail, and the new roof looks fantastic. Worth every penny.",
-    attribution: "Example review — replace with real customer",
+      "Fast, clean, and very respectful. These guys did a great job and they protected all of the plants.",
+    name: "Verified customer",
+    source: "Google Review",
   },
-  {
-    quote:
-      "Found the source of a leak two other companies missed. Fair quote, fixed it right, and followed up to make sure it stayed dry. Highly recommend.",
-    attribution: "Example review — replace with real customer",
-  },
+] as const;
+
+/* The real team, from the company's About page. Members without a real photo
+   on file show an initials avatar instead (no stock photos). */
+export const TEAM = [
+  { name: "Jason VanDyke", role: "Owner", location: "", photo: "/images/team-jason-vandyke.jpg" },
+  { name: "Doug VanNoord", role: "Owner", location: "", photo: null },
+  { name: "Tyce VanNoord", role: "Project Manager / Estimator", location: "Grand Rapids", photo: "/images/team-tyce-vannoord.jpg" },
+  { name: "Cole Bleyenburg", role: "Project Manager / Estimator", location: "Grand Rapids", photo: "/images/team-cole-bleyenburg.jpg" },
+  { name: "Rob Spicuzza", role: "Sales", location: "Grand Rapids", photo: "/images/team-rob-spicuzza.jpg" },
+  { name: "Ross Williams", role: "Project Manager / Estimator", location: "Traverse City", photo: null },
+  { name: "Ken Stoel", role: "Project Manager / Estimator", location: "Charlevoix", photo: null },
 ] as const;

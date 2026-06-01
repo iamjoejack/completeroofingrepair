@@ -29,10 +29,20 @@ export function LocationPage({
     areaServed: { "@type": "City", name: `${name}, MI` },
     url: `${BASE_URL}/locations/${slug}`,
   };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Service Area", item: `${BASE_URL}/service-area` },
+      { "@type": "ListItem", position: 3, name: `Roofing in ${name}`, item: `${BASE_URL}/locations/${slug}` },
+    ],
+  };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
       <InnerHero eyebrow={`Roofing in ${name}`} title={title}>{lead}</InnerHero>
 
