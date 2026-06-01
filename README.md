@@ -81,7 +81,16 @@ Everything is already wired — you just supply three values in `.env.local`:
 NEXT_PUBLIC_CRM_BASE_URL=https://thebestcrm.vercel.app   # your CRM deployment URL (no trailing slash)
 CRM_LEAD_FORM_ID=ripkl6t3cfo461l45o6a4e43                # the "Roofing Website Quote" form
 NEXT_PUBLIC_CRM_CHAT_WIDGET_SLUG=complete-roofing        # the chat widget
+LEAD_NOTIFY_WEBHOOK_URL=                                 # optional instant lead alert (see below)
 ```
+
+**Instant lead alerts (optional).** Set `LEAD_NOTIFY_WEBHOOK_URL` to get pinged the
+second a quote request arrives, through whatever you already use:
+- **Slack / Discord:** create an incoming webhook and paste its URL. The lead shows up as a message.
+- **Email or text:** create a free Zapier or Make "catch hook," paste its URL, and have it forward to your inbox or phone.
+
+It fires in parallel with the CRM and never blocks or fails a lead. Leave it blank to
+rely on the CRM alone (every lead still lands as a Contact with a follow-up task).
 
 **How a lead flows:**
 1. A visitor submits the quote form.
