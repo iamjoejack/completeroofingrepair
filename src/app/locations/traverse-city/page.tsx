@@ -17,7 +17,7 @@ export default function Page() {
       lead={
         <>
           We travel north to Traverse City for larger roofing projects, bringing the same craftsmanship and warranties
-          we’re known for in West Michigan — built for the heavier snow loads of northern Michigan.
+          we’re known for in West Michigan, built for the heavier snow loads of northern Michigan.
         </>
       }
       body={
@@ -25,16 +25,16 @@ export default function Page() {
           <p>
             Traverse City roofs face some of the toughest conditions in the state. Lake-effect snow off Grand Traverse
             Bay piles deep, ice dams are a real and recurring threat, and the seasonal freeze-thaw is relentless. That
-            makes proper ventilation, ice-and-water shield, and quality materials non-negotiable — not upsells.
+            makes proper ventilation, ice-and-water shield, and quality materials non-negotiable, not upsells.
           </p>
           <p>
-            For larger projects in the Traverse City area — full replacements, new installations, and significant
-            storm-damage work — we bring the experience to do it right: balanced attic ventilation to fight ice dams,
+            For larger projects in the Traverse City area like full replacements, new installations, and significant
+            storm-damage work, we bring the experience to do it right: balanced attic ventilation to fight ice dams,
             thorough waterproofing at the eaves and valleys, and materials chosen to handle heavy snow and wind.
           </p>
           <h2>Built for northern Michigan weather</h2>
           <p>
-            Asphalt shingle, cedar shake, metal, and TPO — we’ll help you choose the system that makes sense for your
+            Asphalt shingle, cedar shake, metal, and TPO. We’ll help you choose the system that makes sense for your
             home and the climate. Metal, in particular, is a popular choice up north for the way it sheds snow.
           </p>
           <h2>Worth the drive</h2>

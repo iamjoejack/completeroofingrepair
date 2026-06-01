@@ -55,7 +55,7 @@ export function LocationPage({
               <div className="rounded-2xl bg-charcoal p-6 text-white">
                 <h2 className="text-xl font-bold">Free quote in {name}</h2>
                 <p className="mt-2 text-sm text-gray-300">
-                  Repair, replacement, or new roof — get a clear, written estimate within 24 hours.
+                  Repair, replacement, or new roof. Get a clear, written estimate within 24 hours.
                 </p>
                 <Link href="/contact" className="btn-primary mt-4 w-full">Request a quote</Link>
                 <p className="mt-3 text-center text-xs text-gray-400">Emergency? We answer 24/7.</p>

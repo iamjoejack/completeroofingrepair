@@ -22,11 +22,11 @@ export default function Home() {
         <div className="wrap relative grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
           {/* Left — message + CTAs */}
           <div>
-            <p className="anim-fade-up eyebrow inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 ring-1 ring-white/10">
-              <span className="h-2 w-2 rounded-full bg-brand" /> Trusted Grand Rapids Roofers Since 2008
+            <p className="anim-fade-up eyebrow inline-flex items-center gap-2 rounded-full bg-brand/25 px-3 py-1 text-white ring-1 ring-brand/40">
+              <span className="h-2 w-2 rounded-full bg-white" /> Trusted Grand Rapids Roofers Since 2008
             </p>
             <h1 className="anim-fade-up mt-5 text-4xl font-black leading-[1.04] tracking-tight sm:text-5xl lg:text-6xl" style={{ animationDelay: "80ms" }}>
-              A roof you can <span className="text-brand">trust</span> — done right the first time.
+              A roof you can <span className="text-brand">trust</span>, done right the first time.
             </h1>
             <p className="anim-fade-up mt-5 max-w-xl text-lg text-gray-300" style={{ animationDelay: "160ms" }}>
               Repairs, replacements, and new roofs across Greater Grand Rapids. Backed by a{" "}
@@ -91,7 +91,7 @@ export default function Home() {
             <div className="anim-pop absolute bottom-3 right-3 max-w-[15rem] rounded-2xl bg-white p-4 text-charcoal shadow-xl lg:-bottom-7 lg:-right-7" style={{ animationDelay: "760ms" }}>
               <Stars className="[&>svg]:h-4 [&>svg]:w-4" />
               <p className="mt-2 text-sm leading-snug text-gray-700">“Showed up on time with a full crew and put on a great-looking new roof.”</p>
-              <p className="mt-1.5 text-xs font-bold text-gray-500">— Dean V. · BBB</p>
+              <p className="mt-1.5 text-xs font-bold text-gray-500">Dean V., BBB</p>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
             <p className="eyebrow">Free quote in 24 hours</p>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Tell us about your roof</h2>
             <p className="mt-4 text-lg text-gray-600">
-              A few quick details is all we need to get you a clear, written estimate — no pressure and no obligation.
+              A few quick details is all we need to get you a clear, written estimate. No pressure and no obligation.
             </p>
             <ul className="mt-6 space-y-3">
               {[
@@ -116,7 +116,7 @@ export default function Home() {
                   <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-brand/10 text-brand">
                     <Icon name="check" className="h-5 w-5" />
                   </span>
-                  <span><strong className="font-bold text-charcoal">{t}</strong> — <span className="text-gray-600">{d}</span></span>
+                  <span><strong className="font-bold text-charcoal">{t}.</strong> <span className="text-gray-600">{d}</span></span>
                 </li>
               ))}
             </ul>
@@ -141,8 +141,8 @@ export default function Home() {
             <p className="eyebrow">What we do</p>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Complete roofing &amp; exterior services</h2>
             <p className="mt-3 text-lg text-gray-600">
-              From a single missing shingle to a full tear-off and replacement — plus gutters, siding, and storm-damage
-              repair. One trusted local crew for it all.
+              One local crew handles all of it, from a single missing shingle to a full tear-off and replacement, plus
+              gutters, siding, and storm-damage repair.
             </p>
           </Reveal>
 
@@ -186,7 +186,7 @@ export default function Home() {
                 ["20-year workmanship warranty", "Plus manufacturer warranties on materials."],
                 ["Insurance claims made easy", "We work directly with your provider on storm damage."],
                 ["Flexible financing", "Get the roof you need now and pay over time."],
-                ["Free quotes within 24 hours", "Clear, written pricing — no pressure, no surprises."],
+                ["Free quotes within 24 hours", "Clear, written pricing with no pressure and no surprises."],
               ].map(([term, desc]) => (
                 <div key={term} className="flex gap-3">
                   <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand/10 text-brand">
@@ -236,7 +236,7 @@ export default function Home() {
                   <Stars />
                   <blockquote className="mt-4 text-gray-200">“{r.quote}”</blockquote>
                   <figcaption className="mt-4 text-sm font-semibold text-gray-400">
-                    — {r.name} <span className="font-normal text-gray-500">· {r.source}</span>
+                    {r.name} <span className="font-normal text-gray-500">· {r.source}</span>
                   </figcaption>
                 </figure>
               </Reveal>
@@ -259,7 +259,7 @@ export default function Home() {
             <p className="eyebrow">Proudly local</p>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Serving Greater Grand Rapids &amp; beyond</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Based in Byron Center, we cover the West Michigan communities below — and travel to Traverse City and
+              Based in Byron Center, we cover the West Michigan communities below, and we travel to Traverse City and
               Charlevoix for larger projects. Not sure if you’re in range? Just ask.
             </p>
             <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-gray-700 sm:grid-cols-3">

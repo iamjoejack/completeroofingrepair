@@ -17,7 +17,7 @@ export default function Page() {
       lead={
         <>
           From Heritage Hill’s century-old homes to newer builds on the city’s edges, Grand Rapids has some of the most
-          varied housing stock in West Michigan — and we’ve roofed across all of it since 2008.
+          varied housing stock in West Michigan, and we’ve roofed across all of it since 2008.
         </>
       }
       body={
@@ -30,7 +30,7 @@ export default function Page() {
             ventilation and ice dams.
           </p>
           <p>
-            We handle it all — emergency leak repair, storm-damage claims, full tear-offs and replacements, and new
+            We handle it all: emergency leak repair, storm-damage claims, full tear-offs and replacements, and new
             installations in asphalt shingle, cedar shake, metal, and TPO. Because we’re local, we know the permitting,
             the weather patterns, and the kinds of problems Grand Rapids homes actually run into.
           </p>

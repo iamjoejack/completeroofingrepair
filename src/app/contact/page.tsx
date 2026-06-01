@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <>
       <InnerHero eyebrow="Contact Us" title="Request your free quote" showCta={false}>
-        Fill out the form and we’ll get back to you within 24 hours. Need help right now? Call or text us — we answer
+        Fill out the form and we’ll get back to you within 24 hours. Need help right now? Call or text us. We answer
         24/7 for roofing emergencies.
       </InnerHero>
 
@@ -54,8 +54,8 @@ export default function Page() {
                 {SITE.address.city}, {SITE.address.state} {SITE.address.zip}
               </address>
               <dl className="mt-4 space-y-1 text-sm text-gray-700">
-                <div className="flex justify-between gap-4"><dt>Mon – Fri</dt><dd className="font-semibold">8:00am – 5:00pm</dd></div>
-                <div className="flex justify-between gap-4"><dt>Sat – Sun</dt><dd className="font-semibold">Closed</dd></div>
+                <div className="flex justify-between gap-4"><dt>Mon-Fri</dt><dd className="font-semibold">8:00am to 5:00pm</dd></div>
+                <div className="flex justify-between gap-4"><dt>Sat &amp; Sun</dt><dd className="font-semibold">Closed</dd></div>
                 <div className="mt-2 rounded-lg bg-brand/10 px-3 py-2 font-semibold text-brand">24/7 emergency service available</div>
               </dl>
             </div>

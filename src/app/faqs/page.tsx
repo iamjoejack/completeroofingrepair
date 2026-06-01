@@ -21,7 +21,7 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: "How fast can I get a quote?",
-    a: "We provide free quotes within 24 hours. For active leaks or storm damage, call us any time — we offer 24/7 emergency service and can get a temporary fix in place fast.",
+    a: "We provide free quotes within 24 hours. For active leaks or storm damage, call us any time. We offer 24/7 emergency service and can get a temporary fix in place fast.",
   },
   {
     q: "What warranty do you offer?",
@@ -41,11 +41,11 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: "Are you licensed and insured?",
-    a: "Yes — we’re a licensed and insured roofing contractor and a BBB-accredited business, serving West Michigan since 2008.",
+    a: "Yes. We’re a licensed and insured roofing contractor and a BBB-accredited business, serving West Michigan since 2008.",
   },
   {
     q: "What areas do you serve?",
-    a: "We serve Greater Grand Rapids — including Byron Center, Grandville, Kentwood, Caledonia, Hudsonville, Jenison, Wayland and more — plus Traverse City and Charlevoix for larger projects.",
+    a: "We serve Greater Grand Rapids, including Byron Center, Grandville, Kentwood, Caledonia, Hudsonville, Jenison, and Wayland. We also cover Traverse City and Charlevoix for larger projects.",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
       <InnerHero eyebrow="FAQs" title="Roofing questions, answered">
-        Straight answers to what homeowners ask us most. Don’t see your question? Call or text {PHONE_DISPLAY} — we’re
+        Straight answers to what homeowners ask us most. Don’t see your question? Call or text {PHONE_DISPLAY} and we’re
         happy to help.
       </InnerHero>
 

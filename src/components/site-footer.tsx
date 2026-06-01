@@ -52,8 +52,8 @@ export function SiteFooter() {
         <div>
           <h2 className="text-sm font-bold uppercase tracking-wider text-white">Hours</h2>
           <ul className="mt-4 space-y-2 text-sm">
-            <li className="flex justify-between gap-4"><span>Mon – Fri</span><span className="text-white">8:00am – 5:00pm</span></li>
-            <li className="flex justify-between gap-4"><span>Sat – Sun</span><span className="text-white">Closed</span></li>
+            <li className="flex justify-between gap-4"><span>Mon-Fri</span><span className="text-white">8:00am to 5:00pm</span></li>
+            <li className="flex justify-between gap-4"><span>Sat &amp; Sun</span><span className="text-white">Closed</span></li>
             <li className="mt-3 rounded-lg bg-brand/15 px-3 py-2 font-semibold text-brand">24/7 emergency service available</li>
           </ul>
         </div>
@@ -68,7 +68,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener"
               className="inline-flex items-center rounded-lg bg-white p-2 hover:bg-gray-100"
-              aria-label="BBB A+ Accredited Business — view our profile"
+              aria-label="BBB A+ Accredited Business, view our profile"
             >
               <Image src="/images/bbb-seal.png" alt="BBB A+ Accredited Business seal" width={158} height={110} className="h-11 w-auto" />
             </a>

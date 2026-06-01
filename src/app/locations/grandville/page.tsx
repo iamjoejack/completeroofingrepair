@@ -28,7 +28,7 @@ export default function Page() {
             granules collecting in your gutters, catching it early keeps a small repair from turning into a big one.
           </p>
           <p>
-            We provide the full range of roofing services in Grandville — repairs across shingle, cedar shake, metal,
+            We provide the full range of roofing services in Grandville: repairs across shingle, cedar shake, metal,
             TPO, and wood shake; complete tear-offs and replacements; inspections and maintenance; and gutters, siding,
             and storm-damage repair. As a nearby local company, we’re quick to respond and easy to reach.
           </p>

@@ -8,16 +8,16 @@ import { CITIES, LOCATION_PAGES, SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Service Area",
   description:
-    "Complete Roofing & Repair serves Greater Grand Rapids — Byron Center, Grandville, Kentwood, Caledonia, Hudsonville, Jenison and more — plus Traverse City and Charlevoix. Call (616) 207-3831.",
+    "Complete Roofing & Repair serves Greater Grand Rapids, including Byron Center, Grandville, Kentwood, Caledonia, Hudsonville, and Jenison, plus Traverse City and Charlevoix. Call (616) 207-3831.",
   alternates: { canonical: "/service-area" },
 };
 
 export default function Page() {
   return (
     <>
-      <InnerHero eyebrow="Service Area" title="Roofing across Greater Grand Rapids — and beyond">
+      <InnerHero eyebrow="Service Area" title="Roofing across Greater Grand Rapids and beyond">
         Based in Byron Center, we cover communities throughout West Michigan, and travel to Traverse City and Charlevoix
-        for larger projects. If you don’t see your town listed, just ask — we likely cover it.
+        for larger projects. If you don’t see your town listed, just ask. We likely cover it.
       </InnerHero>
 
       <section className="py-16 sm:py-20">

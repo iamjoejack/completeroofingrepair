@@ -25,7 +25,7 @@ export const SITE = {
     state: "MI",
     zip: "49315",
   },
-  hoursShort: "Mon–Fri 8am–5pm · 24/7 emergency",
+  hoursShort: "Mon-Fri 8am to 5pm · 24/7 emergency",
   mapEmbedSrc:
     "https://www.google.com/maps?q=6049+Clyde+Park+Avenue+SW,+Byron+Center,+MI+49315&output=embed",
   mapsLink:
@@ -54,14 +54,14 @@ export const SERVICES = [
     title: "Roof Installation",
     icon: "house",
     blurb:
-      "New roofs in asphalt shingle, cedar shake, metal, and TPO — built to handle Michigan winters and last for decades.",
+      "New roofs in asphalt shingle, cedar shake, metal, and TPO. Built to handle Michigan winters and last for decades.",
   },
   {
     slug: "roof-repairs",
     title: "Roof Repairs",
     icon: "wrench",
     blurb:
-      "Fast, lasting fixes for shingle, cedar shake, metal, TPO, and wood shake roofs — so a small problem never becomes a big one.",
+      "Fast, lasting fixes for shingle, cedar shake, metal, TPO, and wood shake roofs, so a small problem never turns into a big one.",
   },
   {
     slug: "specialty-repairs",
@@ -82,14 +82,14 @@ export const SERVICES = [
     title: "Gutters",
     icon: "gutter",
     blurb:
-      "Gutter installation, repair, and cleaning to move water away from your roof, foundation, and landscaping — and prevent costly leaks.",
+      "Gutter installation, repair, and cleaning that moves water away from your roof, foundation, and landscaping so you avoid costly leaks.",
   },
   {
     slug: "construction",
     title: "Construction",
     icon: "building",
     blurb:
-      "Exterior doors, siding, windows, and vapor barrier — protecting and upgrading the whole exterior envelope of your home.",
+      "Exterior doors, siding, windows, and vapor barrier that protect and upgrade the whole exterior of your home.",
   },
 ] as const;
 

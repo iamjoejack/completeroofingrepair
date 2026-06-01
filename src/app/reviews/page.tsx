@@ -7,7 +7,7 @@ import { REVIEWS, SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Reviews",
   description:
-    "See what West Michigan homeowners say about Complete Roofing & Repair — and leave your own review. Trusted, BBB-accredited roofing since 2008. Call (616) 207-3831.",
+    "See what West Michigan homeowners say about Complete Roofing & Repair, and leave your own review. Trusted, BBB-accredited roofing since 2008. Call (616) 207-3831.",
   alternates: { canonical: "/reviews" },
 };
 
@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <>
       <InnerHero eyebrow="Reviews" title="What West Michigan homeowners say">
-        Our reputation is built one roof — and one happy homeowner — at a time. Real, verified reviews appear here as
+        Our reputation is built one roof and one happy homeowner at a time. Real, verified reviews appear here as
         they come in.
       </InnerHero>
 
@@ -44,7 +44,7 @@ export default function Page() {
                 <Stars />
                 <blockquote className="mt-4 text-gray-700">“{r.quote}”</blockquote>
                 <figcaption className="mt-4 text-sm font-semibold text-gray-500">
-                  — {r.name} <span className="font-normal text-gray-400">· {r.source}</span>
+                  {r.name} <span className="font-normal text-gray-400">· {r.source}</span>
                 </figcaption>
               </figure>
             ))}
@@ -57,7 +57,7 @@ export default function Page() {
           <p className="eyebrow">Worked with us?</p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Leave us a review</h2>
           <p className="mt-3 text-lg text-gray-600">
-            A few words about your experience helps other homeowners find a roofer they can trust — and means a lot to
+            A few words about your experience helps other homeowners find a roofer they can trust, and it means a lot to
             our crew.
           </p>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">

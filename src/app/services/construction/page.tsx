@@ -23,12 +23,12 @@ export default function Page() {
       intro={
         <>
           <p>
-            The “envelope” of your home — everything that separates inside from outside — is what keeps you dry, warm,
+            The “envelope” of your home, everything that separates inside from outside, is what keeps you dry, warm,
             and energy-efficient. When one part is failing, the others have to work harder. Drafty windows, worn siding,
             and missing vapor barrier all let moisture and air through, driving up energy bills and inviting rot.
           </p>
           <p>
-            As a roofing-first contractor, we’re especially good at the places where these systems meet the roof — the
+            As a roofing-first contractor, we’re especially good at the places where these systems meet the roof, the
             transitions that are easy to get wrong and expensive to fix later. One trusted local crew, one point of
             contact, work that ties together cleanly.
           </p>

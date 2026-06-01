@@ -26,7 +26,7 @@ export default function Page() {
           <p>
             The cheapest roof is the one you take care of. A regular inspection and a little maintenance can add years to
             a roof’s life and catch small issues before they become expensive ones. And when a roof truly is at the end
-            of the road, a proper tear-off and replacement — done with the right ventilation and underlayment — gives you
+            of the road, a proper tear-off and replacement, done with the right ventilation and underlayment, gives you
             decades of worry-free protection.
           </p>
           <p>
@@ -36,15 +36,15 @@ export default function Page() {
           </p>
           <h3>Buying or selling a home?</h3>
           <p>
-            We provide clear, documented roof inspections so you know exactly what you’re dealing with before you sign —
-            no surprises, no scare tactics.
+            We provide clear, documented roof inspections so you know exactly what you’re dealing with before you sign. No
+            surprises, no scare tactics.
           </p>
         </>
       }
       items={[
-        { name: "Roof Inspection", desc: "A thorough, documented assessment of your roof’s condition — great for buyers, sellers, and peace of mind." },
+        { name: "Roof Inspection", desc: "A thorough, documented assessment of your roof’s condition. Great for buyers, sellers, and peace of mind." },
         { name: "Roof Maintenance", desc: "Routine tune-ups that catch small issues early and extend the life of your existing roof." },
-        { name: "Roof Replacement", desc: "A complete new roof when repairs no longer make sense — with warranty-backed materials and workmanship." },
+        { name: "Roof Replacement", desc: "A complete new roof when repairs no longer make sense, with warranty-backed materials and workmanship." },
         { name: "Roof Tear-Off", desc: "Full removal of old layers down to the deck so the new roof sits on a sound, inspected base." },
         { name: "Ventilation", desc: "Balanced intake and exhaust to keep your attic dry, prevent ice dams, and protect shingles." },
         { name: "Waterproofing", desc: "Ice-and-water shield and sealing at the most leak-prone areas of your roof." },
@@ -55,7 +55,7 @@ export default function Page() {
       closing={
         <>
           <p>
-            Want a baseline on your roof’s health? <a href="/contact">Book an inspection</a> — you’ll get a straight
+            Want a baseline on your roof’s health? <a href="/contact">Book an inspection</a>. You’ll get a straight
             answer and a clear plan, whether that’s “you’re good for years” or a written replacement quote.
           </p>
         </>

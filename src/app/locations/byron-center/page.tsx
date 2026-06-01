@@ -16,7 +16,7 @@ export default function Page() {
       title="Your hometown roofer in Byron Center, MI"
       lead={
         <>
-          Byron Center isn’t just in our service area — it’s home. Our shop is on Clyde Park Avenue, and we’ve been
+          Byron Center isn’t just in our service area. It’s home. Our shop is on Clyde Park Avenue, and we’ve been
           taking care of our neighbors’ roofs here since 2008.
         </>
       }
@@ -30,13 +30,13 @@ export default function Page() {
           </p>
           <p>
             We do everything from quick repairs and leak detection to complete tear-offs and new installations in
-            asphalt shingle, cedar shake, metal, and TPO — plus gutters, siding, windows, and storm-damage work. One
+            asphalt shingle, cedar shake, metal, and TPO, plus gutters, siding, windows, and storm-damage work. One
             local crew for the whole exterior of your home.
           </p>
           <h2>Right around the corner when you need us</h2>
           <p>
             A leak doesn’t wait for business hours, and neither do we. Our 24/7 emergency service means a fast response
-            when water is getting in — and because we’re based right here, “fast” actually means fast.
+            when water is getting in, and because we’re based right here, “fast” actually means fast.
           </p>
           <h2>The local standard</h2>
           <p>

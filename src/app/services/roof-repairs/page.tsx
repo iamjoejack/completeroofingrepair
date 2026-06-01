@@ -4,7 +4,7 @@ import { ServicePage } from "@/components/service-page";
 export const metadata: Metadata = {
   title: "Roof Repairs",
   description:
-    "Fast, lasting roof repairs in Greater Grand Rapids — asphalt shingle, cedar shake, metal, TPO, and wood shake. Leaks, missing shingles, storm damage. 24/7 emergency service. Call (616) 207-3831.",
+    "Fast, lasting roof repairs in Greater Grand Rapids: asphalt shingle, cedar shake, metal, TPO, and wood shake. Leaks, missing shingles, storm damage. 24/7 emergency service. Call (616) 207-3831.",
   alternates: { canonical: "/services/roof-repairs" },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
     <ServicePage
       slug="roof-repairs"
       eyebrow="Roof Repairs"
-      title="Roof repairs done right — before a small problem gets big"
+      title="Roof repairs done right, before a small problem gets big"
       lead={
         <>
           A missing shingle or a small leak rarely stays small. We fix shingle, cedar shake, metal, TPO, and wood shake
@@ -23,14 +23,14 @@ export default function Page() {
       intro={
         <>
           <p>
-            Most roof problems start at the weak points — flashing, valleys, penetrations, and worn or wind-lifted
+            Most roof problems start at the weak points: flashing, valleys, penetrations, and worn or wind-lifted
             shingles. Catch them early and a repair is straightforward and affordable. Wait, and that same leak can rot
             decking, soak insulation, and stain ceilings, turning a quick fix into a major job.
           </p>
           <p>
             We start by finding the actual source of the problem, not just the spot where water shows up inside (those
-            are often in different places). Then we make a repair that matches your existing roof and actually lasts —
-            and if a repair no longer makes sense, we’ll tell you honestly and price out the alternative.
+            are often in different places). Then we make a repair that matches your existing roof and actually lasts. If
+            a repair no longer makes sense, we’ll tell you honestly and price out the alternative.
           </p>
           <h3>Think you might have a leak?</h3>
           <p>
@@ -46,7 +46,7 @@ export default function Page() {
         { name: "Metal Roof Repair", desc: "Re-seal seams and fasteners, fix punctures, and address flashing on standing-seam and panel roofs." },
         { name: "TPO Repair", desc: "Patch membrane punctures and failed seams on flat and low-slope sections to restore a watertight surface." },
         { name: "Wood Shake Repair", desc: "Targeted replacement and resealing that preserves the look of a wood-shake roof while sealing out water." },
-        { name: "Flashing & Leak Repair", desc: "Chimney, valley, and penetration flashing — the most common leak sources — sealed and made right." },
+        { name: "Flashing & Leak Repair", desc: "Chimney, valley, and penetration flashing, the most common leak sources, sealed and made right." },
       ]}
       closing={
         <>

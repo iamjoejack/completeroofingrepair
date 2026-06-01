@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <InnerHero eyebrow="Our Services" title="Everything your roof and exterior need — one trusted local crew">
+      <InnerHero eyebrow="Our Services" title="Everything your roof and exterior need, handled by one local crew">
         From a single missing shingle to a full tear-off and replacement, plus gutters, siding, and storm-damage
         repair. Explore each category below, or just call and tell us what’s going on.
       </InnerHero>
@@ -37,7 +37,7 @@ export default function Page() {
         </div>
       </section>
 
-      <CtaBand title="Not sure which service you need?" subtitle="Describe what you're seeing and we'll point you the right way — free quote within 24 hours." />
+      <CtaBand title="Not sure which service you need?" subtitle="Describe what you're seeing and we'll point you the right way. Free quote within 24 hours." />
     </>
   );
 }

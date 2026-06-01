@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const VALUES = [
-  ["Honest from the first call", "Clear, written quotes and straight answers — no scare tactics, no pressure, no surprise charges."],
+  ["Honest from the first call", "Clear, written quotes and straight answers. No scare tactics, no pressure, no surprise charges."],
   ["Craftsmanship that lasts", "We build roofs as systems and stand behind our work with a 20-year workmanship warranty."],
   ["Respect for your home", "Clean, protected job sites and a final walkthrough on every project. We treat your home like our own."],
   ["Here when it matters", "24/7 emergency response and direct work with your insurance when storms hit."],
@@ -37,7 +37,7 @@ export default function Page() {
               later, that hasn’t changed.
             </p>
             <p>
-              Over the years we’ve grown from repairs and small jobs into a full-service roofing and exterior company —
+              Over the years we’ve grown from repairs and small jobs into a full-service roofing and exterior company,
               handling everything from emergency leak repair to complete tear-offs and replacements, plus gutters,
               siding, windows, and doors. What hasn’t grown is the corner-cutting, because there isn’t any.
             </p>

@@ -36,7 +36,7 @@ export function SiteHeader() {
       {/* Sticky header */}
       <header className="sticky top-0 z-40 bg-white/95 shadow-sm backdrop-blur">
         <div className="wrap flex items-center justify-between gap-4 py-3">
-          <Link href="/" className="flex items-center" aria-label="Complete Roofing & Repair — home">
+          <Link href="/" className="flex items-center" aria-label="Complete Roofing & Repair home">
             <Image
               src="/images/logo.jpg"
               alt="Complete Roofing & Repair logo"

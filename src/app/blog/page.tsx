@@ -9,7 +9,7 @@ import { POSTS } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Roofing Blog",
   description:
-    "Practical roofing advice for West Michigan homeowners — repair timing, insurance coverage, leak dangers, and more from Complete Roofing & Repair. Call (616) 207-3831.",
+    "Practical roofing advice for West Michigan homeowners: repair timing, insurance coverage, leak dangers, and more from Complete Roofing & Repair. Call (616) 207-3831.",
   alternates: { canonical: "/blog" },
 };
 

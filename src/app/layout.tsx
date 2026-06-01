@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE.legalName,
     url: BASE_URL,
-    title: "Complete Roofing & Repair — Trusted Grand Rapids Roofers Since 2008",
+    title: "Complete Roofing & Repair | Trusted Grand Rapids Roofers Since 2008",
     description:
       "Roof repair, replacement & installation across Greater Grand Rapids. 20-year workmanship warranty, financing, free 24-hour quotes, 24/7 emergency service.",
     images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Complete Roofing & Repair — Trusted Grand Rapids Roofers Since 2008",
+    title: "Complete Roofing & Repair | Trusted Grand Rapids Roofers Since 2008",
     description:
       "Roof repair, replacement & installation across Greater Grand Rapids. 20-year workmanship warranty, financing, 24/7 emergency service.",
     images: ["/images/truck-house.jpg"],

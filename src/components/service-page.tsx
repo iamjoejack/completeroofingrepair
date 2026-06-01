@@ -77,7 +77,7 @@ export function ServicePage({
               <div className="rounded-2xl bg-charcoal p-6 text-white">
                 <h2 className="text-xl font-bold">Free quote in 24 hours</h2>
                 <p className="mt-2 text-sm text-gray-300">
-                  Tell us what’s going on and we’ll get you a clear, written estimate — no pressure.
+                  Tell us what’s going on and we’ll get you a clear, written estimate. No pressure.
                 </p>
                 <Link href="/contact" className="btn-primary mt-4 w-full">Request a quote</Link>
                 <p className="mt-3 text-center text-xs text-gray-400">Emergency? We answer 24/7.</p>

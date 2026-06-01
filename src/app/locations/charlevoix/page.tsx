@@ -23,13 +23,13 @@ export default function Page() {
       body={
         <>
           <p>
-            Charlevoix’s setting between Lake Michigan and Lake Charlevoix is beautiful — and demanding on a roof. Wind
+            Charlevoix’s setting between Lake Michigan and Lake Charlevoix is beautiful, and demanding on a roof. Wind
             coming off open water, heavy lake-effect snow, and the wide temperature swings of a four-season resort town
             all put roofing materials and details to the test. Cedar shake and other premium materials are common here,
             and they reward a roofer who installs them correctly.
           </p>
           <p>
-            For larger Charlevoix projects — replacements, new installs, and substantial repairs — we bring the right
+            For larger Charlevoix projects like replacements, new installs, and substantial repairs, we bring the right
             approach: proper ventilation, careful waterproofing, and materials selected to stand up to wind, snow, and
             lakeside moisture. We’re also a good fit for seasonal-home owners who need a contractor they can trust to do
             it right while they’re away.
